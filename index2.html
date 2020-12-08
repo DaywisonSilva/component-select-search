@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function carregaArray() {
+            var arrayOptions = [
+                {
+                    id: 1,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 8,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 1,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 8,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 1,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Maria Xícara'
+                },
+                {
+                    id: 8,
+                    nome: 'Maria Carla'
+                },
+                {
+                    id: 1,
+                    nome: 'Maria Antonia'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 8,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 1,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 8,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 1,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 8,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 1,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 2,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 3,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 4,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 5,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 7,
+                    nome: 'Gabriel'
+                },
+                {
+                    id: 8,
+                    nome: 'Gabriel'
+                }
+            ]
+            populaSelect(arrayOptions)
+        }
+
+        function populaSelect(options) {
+            let $select = document.querySelector('.select-opcoes');
+
+            for (let opcao of options) {
+                let $option = document.createElement('option');
+                $option.innerText = opcao.nome
+                $select.appendChild($option)
+            }
+        }
+    </script>
+</head>
+<body onload="carregaArray()">
+    <form>
+        <select class="select-opcoes">
+            <option value="">
+                <input type="text" name="" id="" value="Olá" placeholder="Selecione">
+            </option>
+        </select>
+    </form>
+</body>
+</html>
